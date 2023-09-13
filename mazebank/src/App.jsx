@@ -3,9 +3,9 @@ import Cuentas from './components/Cuentas';
 import Pagos from './components/Pagos';
 import Prestamos from './components/Prestamos';
 import Transferencias from './components/Transferencias';
-import Login from './components/Login';
 import Index from './components/Index';
 import './App.css';
+import Login from './components/Login';
 
 function App() {
   return (
