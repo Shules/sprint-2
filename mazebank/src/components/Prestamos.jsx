@@ -79,10 +79,10 @@ function Prestamos() {
               </p>
               <br />
               <h3>
-                <button id="cancelar" type="button" onClick={cancelacion()}>
+                <button id="cancelar" type="button" onClick={''}>
                   Cancelar
                 </button>
-                <button id="confirmar" type="button" onClick={mostrarAviso()}>
+                <button id="confirmar" type="button" onClick={''}>
                   Continuar
                 </button>
               </h3>

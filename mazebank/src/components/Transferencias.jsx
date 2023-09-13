@@ -101,7 +101,7 @@ function Transferencias() {
         <br />
         <br />
         <div id="botonContinuar">
-          <button type="button" id="continuar" onClick={mostrarAviso()}>
+          <button type="button" id="continuar" onClick={''}>
             Continuar
           </button>
         </div>
