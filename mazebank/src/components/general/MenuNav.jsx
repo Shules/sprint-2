@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MenuNav() {
   return (
     <section id="menu">
@@ -9,20 +11,20 @@ function MenuNav() {
       </a>
       <nav id="contenedor-enlaces">
         <ul>
-          <li class="inicio">
-            <a href="#">INICIO</a>
+          <li className="inicio">
+            <Link to="/">INICIO</Link>
           </li>
-          <li class="cuentas">
-            <a href="cuentas.html">CUENTAS</a>
+          <li className="cuentas">
+            <Link to="/cuentas">CUENTAS</Link>
           </li>
-          <li class="transf">
-            <a href="transferencias.html">TRANSFERENCIAS</a>
+          <li className="transf">
+            <Link to="/transferencias">TRANSFERENCIAS</Link>
           </li>
-          <li class="pagos">
-            <a href="pagos.html">PAGOS</a>
+          <li className="pagos">
+            <Link to="/pagos">PAGOS</Link>
           </li>
-          <li class="prestamos">
-            <a href="prestamos.html">PRESTAMOS</a>
+          <li className="prestamos">
+            <Link to="/prestamos">PRESTAMOS</Link>
           </li>
         </ul>
       </nav>
