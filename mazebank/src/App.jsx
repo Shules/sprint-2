@@ -4,6 +4,7 @@ import Pagos from './components/Pagos';
 import Prestamos from './components/Prestamos';
 import Transferencias from './components/Transferencias';
 import Index from './components/Index';
+import './index.css';
 import './App.css';
 import Login from './components/Login';
 

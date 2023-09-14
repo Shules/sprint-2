@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer>
@@ -14,7 +16,7 @@ function Footer() {
       </section>
       <section id="logo">
         <figure>
-          <img src="img/logo_banco.png" alt="Imagen del logo del banco" />
+          <img src="images/logo_banco.png" alt="Imagen del logo del banco" />
         </figure>
         <h1>Maze Bank</h1>
       </section>
@@ -23,22 +25,22 @@ function Footer() {
         <ul>
           <li>
             <a href="tel:+54936854423">
-              <img src="img/whatsapp-icon.svg" alt="logo telefono" />
+              <img src="images/whatsapp-icon.svg" alt="logo telefono" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/">
-              <img src="img/facebook.svg" alt="logo facebook" />
-            </a>
+            <Link href="https://www.facebook.com/">
+              <img src="images/facebook.svg" alt="logo facebook" />
+            </Link>
           </li>
           <li>
             <a href="https://twitter.com/">
-              <img src="img/twitter.svg" alt="logo twitter" />
+              <img src="images/twitter.svg" alt="logo twitter" />
             </a>
           </li>
           <li>
             <a href="mailto:mazebank@gmail.com">
-              <img src="img/google-gmail.svg" alt="logo gmail" />
+              <img src="images/google-gmail.svg" alt="logo gmail" />
             </a>
           </li>
         </ul>
