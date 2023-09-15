@@ -1,4 +1,5 @@
 import Footer from "./general/Footer";
+import styles from "../styles/Login.module.css";
 
 function Login() {
   function loginConfirmation() {

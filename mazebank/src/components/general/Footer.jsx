@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import styles from "../../styles/Footer.module.css";
 
 function Footer() {
   return (
     <footer>
-      <section id="cond">
+      <section id={styles.cond}>
         <ul>
           <li>
             <Link to="">Terminos y condiciones</Link>
