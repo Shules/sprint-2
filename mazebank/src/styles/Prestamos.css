@@ -1,0 +1,146 @@
+@media all and (max-width:1080px) {
+    #cuentas-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        
+        margin: 10px 0 0 0;
+        font-family: 'Rubik', sans-serif;
+        font-size: 0.75em;
+    }
+
+    #cuentas-container .cuenta-1, .cuenta-2, .cuenta-usd {
+        display: block;
+        padding: 1em 0 1em 1em;
+        width: 90%;
+        max-width: 90%;
+        height: 50%;
+        min-height: 50%;
+        margin-bottom: 1.5em;
+        border-radius: 30px;
+        border-bottom: solid red 8px;
+        border-top: solid red 6px;
+        border-left: solid rgb(118, 116, 116) 4px;
+        border-right: solid rgb(118, 116, 116) 4px;
+        box-shadow: 0px 2px rgb(165, 164, 164);
+    }
+
+    
+
+    .cuenta-1 h1, .cuenta-2 h1, .cuenta-usd h1  {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #cuentas-container .movimientos {
+       margin: 1em 5em 0 0; 
+       
+    } 
+ 
+    #cuentas-container select {
+    appearance: none;
+     border-radius: 15px;
+     border: solid red 3px;
+     width: 12em;
+     text-align: center;
+    }
+   
+
+    #cuentas-container button {
+         padding: 0 1px 0 1px;
+         border: solid red 2px;
+         border-radius: 5px;
+         background-color: white;
+    }
+    
+    #cuentas-container button:hover {
+        padding: 1px 2px 1px 2px;
+        background-color: red;
+        color:white;
+        transition-duration: 0.5s;
+    }
+}
+
+@media all and (min-width:1080px) {
+    #cuerpo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+     
+    h2
+    {
+        
+        color: black;
+        font-family: 'Rubik', sans-serif;;
+    }
+ 
+    #titulo{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 0%;
+        margin-top: 3%;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+
+    #tituloPrestamo {
+        color: white;
+        background-color: #fc1717e2;
+        text-align: center;
+        display: block;
+        font-size: 50px;
+        margin-left: 6px;
+        margin-top: 0px;
+        padding: 2%;
+        text-shadow: 1px 2px 5px rgb(166, 17, 12);
+
+    }
+
+    #Personal
+    {
+        margin-left: 150px;
+        
+    }
+
+    #Emprendimiento
+    {
+        margin-left: 65px;
+    }
+
+    #Capital
+    {
+        margin-left: 52px;
+    }
+
+    p
+    {
+        margin-top: 1%;
+        margin-bottom: 0%;
+        padding-left: 5%;
+        margin-right: 5%;
+        font-size: medium;
+    }
+
+    #cuerpo button  {
+        background-color: white;
+        width: 175px;
+        height: 40px;
+        border: red;
+        border-radius: 10px;
+        margin-top: 25px;
+        font-family: 'Rubik', sans-serif;
+        box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.719);
+    }
+
+    button:hover{
+        color: white;
+        background-color: red;
+    }
+
+    #confirmacion
+    {
+        margin-top: 50px;
+        color:black;
+    }
+}
