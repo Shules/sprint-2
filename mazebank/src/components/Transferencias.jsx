@@ -50,8 +50,8 @@ function Transferencias() {
       <Header />
       <MenuNav />
       <main>
-        <form className="menu-transacciones">
-          <div id="titulo">
+        <form className={styles.menuTransacciones}>
+          <div id={styles.titulo}>
             <h2>TRANSFERENCIAS</h2>
             <br />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex at
@@ -66,8 +66,8 @@ function Transferencias() {
             optio quis dolore id libero vitae quae, nulla nemo neque tempore?
           </div>
           <br />
-          <div id="remitente">
-            <ul className="prueba">
+          <div id={styles.remitente}>
+            <ul className={""}>
               <li>De BN $ 123456/5464/0</li>
 
               <li>Fecha de Ejecución 24/8/2023</li>
@@ -75,14 +75,14 @@ function Transferencias() {
               <li>Plazo de Acreditación: En el acto</li>
 
               <li>
-                Su saldo actual es de: $<a id="saldoActual">5000</a>
+                Su saldo actual es de: $<a id={styles.saldoActual}>5000</a>
               </li>
             </ul>
           </div>
           <br />
-          <div id="importes">
-            <label className="prueba"> Importe en </label>
-            <select name="" id="Importe" className="prueba2">
+          <div id={styles.importes}>
+            <label className={""}> Importe en </label>
+            <select name="" id={styles.Importes} className={styles.prueba2}>
               <option value="-">-</option>
               <option value="Pesos">Pesos</option>
               <option value="Dolares">Dolares</option>
@@ -91,22 +91,22 @@ function Transferencias() {
           </div>
           <br />
           <br />
-          <div id="montoIngresar">
-            <label className="prueba">Monto a ingresar </label> <br />
-            <input type="number" name="monto" id="monto" className="prueba2" />
+          <div id={styles.montoIngresar}>
+            <label className={""}>Monto a ingresar </label> <br />
+            <input type="number" name="monto" id={styles.monto} className={""} />
           </div>
           <br />
           <br />
-          <div id="receptor">
-            <label className="prueba">Para </label>
-            <input type="text" className="prueba2" />
+          <div id={styles.receptor}>
+            <label className={""}>Para </label>
+            <input type="text" className={""} />
           </div>
           <br />
           <br />
 
-          <div id="metodo">
-            <label className="prueba">Concepto</label>
-            <select name="" className="prueba2">
+          <div id={styles.metodo}>
+            <label className={""}>Concepto</label>
+            <select name="" className={""}>
               <option value="-">-</option>
               <option value="Cuota">Cuota</option>
               <option value="Factura">Factura</option>
@@ -118,8 +118,8 @@ function Transferencias() {
           </div>
           <br />
           <br />
-          <div id="botonContinuar">
-            <button type="button" id="continuar" onClick={mostrarAviso}>
+          <div id={styles.botonContinuar}>
+            <button type="button" id={styles.continuar} onClick={mostrarAviso}>
               Continuar
             </button>
           </div>

@@ -3,9 +3,9 @@ import styles from "../styles/Login.module.css";
 
 function Login() {
   function loginConfirmation() {
-    const user = document.getElementById("user").value;
+    const user = document.getElementById(styles.user).value;
     const password = document.getElementById("password").value;
-    const login = document.getElementById("login");
+    const login = document.getElementById(styles.login);
     const error = document.createElement("p");
 
     if (user === "A" && password === "123456789") {
@@ -20,28 +20,28 @@ function Login() {
   return (
     <>
       <main>
-        <div id="login">
-          <div className="bank_logo">
+        <div id={styles.login}>
+          <div className={styles.bankLogo}>
             <img src="images/logo_banco.png" alt="bank_logo" />
           </div>
-          <h1 className="bank_name">MAZE BANK</h1> <br />
+          <h1 className={styles.bankName}>MAZE BANK</h1> <br />
           <br />
           <br />
           <br />
-          <h1 className="title">Inicio de sesión</h1>
+          <h1 className={styles.title}>Inicio de sesión</h1>
           <br />
           <br />
-          <form action="" className="login-form">
-            <input type="text" id="user" placeholder="Usuario" />
+          <form action="" className={styles.loginForm}>
+            <input type="text" id={styles.user} placeholder="Usuario" />
             <br />
 
             <input type="password" id="password" placeholder="Contraseña" />
             <br />
-          </form>{" "}
+          </form>
           <br />
           <button
             type="submit"
-            id="boton-iniciarSesion"
+            id={styles.botonIniciarSesion}
             onClick={loginConfirmation}
           >
             <span>Iniciar sesion</span>

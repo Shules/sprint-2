@@ -47,19 +47,19 @@ function Prestamos() {
       <Header />
       <MenuNav />
       <main>
-        <section id="cuerpo">
+        <section id={styles.cuerpo}>
           <div>
-            <h2 id="tituloPrestamo">Nuevo préstamo</h2>
-            <div id="titulo">
+            <h2 id={styles.tituloPrestamo}>Nuevo préstamo</h2>
+            <div id={styles.titulo}>
               <h3>Selecciona tu tipo de préstamo:</h3>
 
-              <div className="prestamo-menu">
-                <label for="prestamo">
+              <div className={styles.prestamoMenu}>
+                <label for={styles.prestamo}>
                   <br />
                   <h2>
                     Personal
                     <input
-                      id="Personal"
+                      id={styles.Personal}
                       type="radio"
                       name="prestamo"
                       value="Personal"
@@ -69,7 +69,7 @@ function Prestamos() {
                   <h2>
                     Emprendimiento
                     <input
-                      id="Emprendimiento"
+                      id={styles.Emprendimiento}
                       type="radio"
                       name="prestamo"
                       value="Emprendimiento"
@@ -79,7 +79,7 @@ function Prestamos() {
                   <h2>
                     Capital de trabajo
                     <input
-                      id="Capital"
+                      id={styles.Capital}
                       type="radio"
                       name="prestamo"
                       value="Capital"
@@ -95,14 +95,14 @@ function Prestamos() {
                 </p>
                 <br />
                 <h3>
-                  <button id="cancelar" type="button" onClick={cancelacion}>
+                  <button id={""} type="button" onClick={cancelacion}>
                     Cancelar
                   </button>
-                  <button id="confirmar" type="button" onClick={mostrarAviso}>
+                  <button id={""} type="button" onClick={mostrarAviso}>
                     Continuar
                   </button>
                 </h3>
-                <p id="confirmacion"></p>
+                <p id={styles.confirmacion}></p>
               </div>
             </div>
           </div>

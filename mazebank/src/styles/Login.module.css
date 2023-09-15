@@ -1,10 +1,10 @@
 
 
-.bank_logo {
+.bankLogo {
     display: flex;
 }
 
-.bank_logo img {
+.bankLogo img {
     margin-right: auto;
     margin-left: auto; 
     top: 1px;
@@ -46,7 +46,7 @@ main {
     margin-bottom: 2rem;
 }
 
-#boton-iniciarSesion{
+#botonIniciarSesion{
     box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);
 }
 
@@ -62,7 +62,7 @@ div h1 {
 }
 
 
-.bank_name {
+.bankName {
     font-size: 45px;
 }
 
@@ -73,7 +73,7 @@ div label {
 }
 
 
-.login-form input {
+.loginForm input {
     text-align: left;
     padding: 0px 8px;
     background-color: white;
@@ -164,7 +164,7 @@ footer a {
 
 @media  (max-width:414px) {
 
-.bank_logo img {
+.bankLogo img {
     display: block;
     left: 35px;
     min-width: 250px;
@@ -204,7 +204,7 @@ div h1 {
 }
 
 
-.bank_name {
+.bankName {
     font-size: 45px;
 }
 
@@ -215,7 +215,7 @@ div label {
 }
 
 
-.login-form input {
+.loginForm input {
     text-align: left;
     padding: 0px 8px;
     background-color: white;
@@ -284,7 +284,7 @@ div button span {
 
 @media  (max-width:280px) {
 
-.bank_logo img {
+.bankLogo img {
         display: block;
         left: 35px;
         min-width: 150px;
@@ -324,7 +324,7 @@ div h1 {
     }
     
     
-.bank_name {
+.bankName {
         font-size: 23px;
     }
     
@@ -335,7 +335,7 @@ div label {
     }
     
     
-.login-form input {
+.loginForm input {
         text-align: left;
         padding: 0px 8px;
         background-color: white;
