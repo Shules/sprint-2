@@ -56,7 +56,22 @@
         justify-content: center;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        border-bottom: red solid;
+    }
 
+    .imagen-titulo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure{
+        padding: auto; 
+    };
+    
+    .imagen-titulo h1{
+        font-size: 42px;
+        margin-top: 13%;
     }
 
     header img {

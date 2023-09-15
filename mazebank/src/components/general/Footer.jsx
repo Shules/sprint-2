@@ -6,10 +6,10 @@ function Footer() {
       <section id="cond">
         <ul>
           <li>
-            <a href="">Terminos y condiciones</a>
+            <Link to="">Terminos y condiciones</Link>
           </li>
           <li>
-            <a href="">Privacidad</a>
+            <Link to="">Privacidad</Link>
           </li>
           <li>© 2023, Maze Bank, S.A.</li>
         </ul>
@@ -24,9 +24,9 @@ function Footer() {
         <h4>Contactanos</h4>
         <ul>
           <li>
-            <a href="tel:+54936854423">
+            <Link to="tel:+54936854423">
               <img src="images/whatsapp-icon.svg" alt="logo telefono" />
-            </a>
+            </Link>
           </li>
           <li>
             <Link href="https://www.facebook.com/">
@@ -34,14 +34,14 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <a href="https://twitter.com/">
+            <Link to="https://twitter.com/">
               <img src="images/twitter.svg" alt="logo twitter" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="mailto:mazebank@gmail.com">
+            <Link to="mailto:mazebank@gmail.com">
               <img src="images/google-gmail.svg" alt="logo gmail" />
-            </a>
+            </Link>
           </li>
         </ul>
       </section>

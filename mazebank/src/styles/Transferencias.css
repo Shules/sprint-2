@@ -1,0 +1,45 @@
+@media all and (max-width:1080px) {
+    #titulo
+    {
+        text-align: justify;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    #titulo h2{
+        text-align: center;
+    }
+
+    .menu-transacciones{
+        margin-left: 50px;
+    }
+
+    #remitente,#importes, #montoIngresar,#receptor,#metodo
+    {
+        border: solid red;
+        border-style: inset;
+        margin-right: 20%;
+    }
+
+    #montoIngresar input, #receptor input {
+        border: solid red;
+        border-style: inset;
+    }
+
+    #botonContinuar
+    {
+        margin-left :35%;
+    }
+
+    #botonContinuar button
+    {
+        color: white;
+        border:solid red ;
+        border-style: inset;
+        background-color: red;
+    }
+}
+
+@media all and (min-width:1080px) {
+    
+}

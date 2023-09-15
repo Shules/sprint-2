@@ -4,10 +4,10 @@ function MenuNav() {
   return (
     <section id="menu">
       <a href="#menu">
-        <img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir" />
+        <img src="images/burger_menu.png" alt="Logo abrir menu" id="abrir" />
       </a>
       <a href="#">
-        <img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar" />
+        <img src="images/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar" />
       </a>
       <nav id="contenedor-enlaces">
         <ul>
