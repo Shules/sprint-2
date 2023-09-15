@@ -1,6 +1,7 @@
 import Header from "./general/Header";
 import Footer from "./general/Footer";
 import MenuNav from "./general/MenuNav";
+import Layout from "./general/Layout";
 import styles from "../styles/Cuentas.module.css";
 
 function Cuentas() {
@@ -17,9 +18,7 @@ function Cuentas() {
   };
 
   return (
-    <>
-      <Header />
-      <MenuNav />
+    <Layout>
       <main>
         <section id={styles.cuentasContainer}>
           <div className={styles.cuenta1}>
@@ -79,8 +78,7 @@ function Cuentas() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

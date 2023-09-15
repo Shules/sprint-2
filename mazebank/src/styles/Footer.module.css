@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 @media all and (min-width: 390px){
-    footer {
+    #footer {
         min-width: 100vw;
         display: flex;
         max-width: 100vw;
@@ -87,7 +93,7 @@
 }
 
     /*COMIENZO FOOTER*/
-    footer {
+    #footer {
         display: flex;
         flex-direction: row;
         background-color: #dedfe0;
@@ -173,7 +179,7 @@
 
 @media all and (max-width: 390px){
     /*COMIENZO FOOTER*/
-    footer {
+    #footer {
         display: flex;
         position: relative;
         bottom: 0;

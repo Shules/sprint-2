@@ -3,7 +3,7 @@ import styles from "../../styles/Footer.module.css";
 
 function Footer() {
   return (
-    <footer>
+    <div id={styles.footer}>
       <section id={styles.cond}>
         <ul>
           <li>
@@ -16,10 +16,10 @@ function Footer() {
         </ul>
       </section>
       <section id={styles.logo}>
+        <h1>Maze Bank</h1>
         <figure>
           <img src="images/logo_banco.png" alt="Imagen del logo del banco" />
         </figure>
-        <h1>Maze Bank</h1>
       </section>
       <section id={styles.redes}>
         <h4>Contactanos</h4>
@@ -46,7 +46,7 @@ function Footer() {
           </li>
         </ul>
       </section>
-    </footer>
+    </div>
   );
 }
 

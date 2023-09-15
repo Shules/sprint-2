@@ -1,6 +1,7 @@
 import Header from "./general/Header";
 import Footer from "./general/Footer";
 import MenuNav from "./general/MenuNav";
+import Layout from "./general/Layout";
 import styles from "../styles/Transferencias.module.css";
 
 function Transferencias() {
@@ -47,8 +48,7 @@ function Transferencias() {
 
   return (
     <>
-      <Header />
-      <MenuNav />
+      <Layout>
       <main>
         <form className={styles.menuTransacciones}>
           <div id={styles.titulo}>
@@ -67,7 +67,7 @@ function Transferencias() {
           </div>
           <br />
           <div id={styles.remitente}>
-            <ul className={""}>
+            <ul>
               <li>De BN $ 123456/5464/0</li>
 
               <li>Fecha de Ejecución 24/8/2023</li>
@@ -125,7 +125,7 @@ function Transferencias() {
           </div>
         </form>
       </main>
-      <Footer />
+      </Layout>
     </>
   );
 }

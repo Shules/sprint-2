@@ -2,13 +2,13 @@ import Header from "./general/Header";
 import Footer from "./general/Footer";
 import MenuNav from "./general/MenuNav";
 import { Link } from 'react-router-dom';
+import Layout from "./general/Layout";
 import styles from "../styles/Index.module.css";
 
 function Index() {
   return (
     <>
-      <Header />
-      <MenuNav />
+      <Layout>
       <main className="main-container">
         <h2>Quienes Somos</h2>
         <section id={styles.info}>
@@ -87,7 +87,7 @@ function Index() {
           </article>
         </section>
       </main>
-      <Footer />
+      </Layout>
     </>
   );
 }

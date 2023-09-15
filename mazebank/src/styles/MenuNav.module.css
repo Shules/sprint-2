@@ -7,7 +7,7 @@
         display: none;
     }
 
-    #menu #contenedor-enlaces {
+    #menu #contenedorEnlaces {
         height: 0;
         /*altura cambia a cero*/
         transition: height 1s ease;
@@ -39,7 +39,7 @@
         /*muestra la imagen de x*/
     }
 
-    #menu:target #contenedor-enlaces {
+    #menu:target #contenedorEnlaces {
         height: 40vh;
         transition: height 1.5s ease;
     }
@@ -48,12 +48,17 @@
 }
 
 @media all and (min-width:1080px) {
+    #menu
+    {
+        display: inline-block;
+    }
+    
     aside {
         display: flex;
     }
 
     #contenedorEnlaces a {
-        display: block;
+        display: inline-block;
         width: 100%;
         margin-bottom: 0.25em;
         margin-top: 0.25em;

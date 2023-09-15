@@ -1,6 +1,7 @@
 import Header from "./general/Header";
 import Footer from "./general/Footer";
 import MenuNav from "./general/MenuNav";
+import Layout from "./general/Layout";
 import styles from "../styles/Prestamos.module.css";
 
 function Prestamos() {
@@ -44,9 +45,8 @@ function Prestamos() {
 
   return (
     <>
-      <Header />
-      <MenuNav />
-      <main>
+      <Layout>
+      <div>
         <section id={styles.cuerpo}>
           <div>
             <h2 id={styles.tituloPrestamo}>Nuevo préstamo</h2>
@@ -107,8 +107,8 @@ function Prestamos() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
+      </div>
+      </Layout>
     </>
   );
 }
