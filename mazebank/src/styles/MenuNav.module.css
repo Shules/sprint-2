@@ -16,7 +16,7 @@
         /*oculta lo que sobre salga*/
     }
 
-    #contenedor-enlaces a {
+    #contenedorEnlaces a {
         display: block;
         width: 100%;
         margin-bottom: 0.25em;
@@ -52,7 +52,7 @@
         display: flex;
     }
 
-    #contenedor-enlaces a {
+    #contenedorEnlaces a {
         display: block;
         width: 100%;
         margin-bottom: 0.25em;
@@ -66,7 +66,7 @@
     }
 
 
-    #contenedor-enlaces {
+    #contenedorEnlaces {
         display: flex;
         flex-direction: column;
         min-width: 330px;
@@ -76,45 +76,45 @@
         font-family: 'Inconsolata', monospace;
     }
 
-    #contenedor-enlaces ul {
+    #contenedorEnlaces ul {
         list-style: none;
         padding-left: 0px;
     }
     
     
-    #contenedor-enlaces li {
+    #contenedorEnlaces li {
         min-width: 100%;
         margin-top: 1%;
         list-style: none;
         display: flex;
     }
 
-    #contenedor-enlaces a{
+    #contenedorEnlaces a{
         transition: 0.8s;
     }
 
-    #contenedor-enlaces .transf a:hover {
+    #contenedorEnlaces .transf a:hover {
         font-size: 2.4rem;
         transition: 0.8s;
     }
 
-    #contenedor-enlaces .inicio a:hover {
+    #contenedorEnlaces .inicio a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
     }
 
-    #contenedor-enlaces .cuentas a:hover {
+    #contenedorEnlaces .cuentas a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
     }
 
-    #contenedor-enlaces .pagos a:hover {
+    #contenedorEnlaces .pagos a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
 
     }
 
-    #contenedor-enlaces .prestamos a:hover {
+    #contenedorEnlaces .prestamos a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
     }

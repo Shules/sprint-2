@@ -11,7 +11,7 @@ function Index() {
       <MenuNav />
       <main className="main-container">
         <h2>Quienes Somos</h2>
-        <section id="info">
+        <section id={styles.info}>
           <p>
             Somos <strong>Maze Bank</strong> un banco intenacional. Contamos con
             128 años antiguedad con clientes de todo el mundo. Te ofrecemos con
@@ -24,8 +24,8 @@ function Index() {
             Lema de <strong>Maze bank</strong>: <em>"Invertí desde tu casa"</em>{" "}
           </p>
         </section>
-        <div className="divManejaTuCuenta card justify-content-center ">
-          <section id="nave">
+        <div className="divManejaTuCuenta card justify-content-center">
+          <section id={styles.nave}>
             <h2 className="card-header">Maneja tu cuenta</h2>
             <ul className="card-body">
               <li className="botonManejaCuenta card-title">
@@ -40,28 +40,28 @@ function Index() {
             </ul>
           </section>
 
-          <section id="formulario">
+          <section id={styles.formulario}>
             <form action="" method="post" className="formSolicitarTarjeta">
               <legend>Solicita tu tarjeta</legend>
 
               <label htmlFor="ape">
                 Apellido:
-                <input type="text" name="ape" id="ape" required />
+                <input type="text" name="ape" id={styles.ape} required />
               </label>
 
               <label htmlFor="nom">
                 Nombre:
-                <input type="text" name="nom" id="nom" required />
+                <input type="text" name="nom" id={styles.nom} required />
               </label>
 
-              <button id="sub" type="submit">
+              <button id={styles.sub} type="submit">
                 Solicitar
               </button>
             </form>
           </section>
         </div>
 
-        <section id="contenido">
+        <section id={styles.contenido}>
           <article>
             <h2>Nuestra Sede</h2>
             <p>

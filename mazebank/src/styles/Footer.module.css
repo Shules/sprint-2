@@ -6,10 +6,6 @@
         flex-direction: row;
         border-top: red solid;
     }
-
-    #menu {
-        display: inline-block;
-    }
     
     #cond {
         width: 33%;

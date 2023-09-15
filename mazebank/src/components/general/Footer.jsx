@@ -15,13 +15,13 @@ function Footer() {
           <li>© 2023, Maze Bank, S.A.</li>
         </ul>
       </section>
-      <section id="logo">
+      <section id={styles.logo}>
         <figure>
           <img src="images/logo_banco.png" alt="Imagen del logo del banco" />
         </figure>
         <h1>Maze Bank</h1>
       </section>
-      <section id="redes">
+      <section id={styles.redes}>
         <h4>Contactanos</h4>
         <ul>
           <li>

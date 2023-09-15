@@ -3,14 +3,14 @@ import styles from "../../styles/MenuNav.module.css";
 
 function MenuNav() {
   return (
-    <section id="menu">
+    <section id={styles.menu}>
       <a href="#menu">
         <img src="images/burger_menu.png" alt="Logo abrir menu" id="abrir" />
       </a>
       <a href="#">
         <img src="images/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar" />
       </a>
-      <nav id="contenedor-enlaces">
+      <nav id={styles.contenedorEnlaces}>
         <ul>
           <li className="inicio">
             <Link to="/">INICIO</Link>

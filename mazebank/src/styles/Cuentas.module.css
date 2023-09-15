@@ -1,5 +1,5 @@
 @media all and (max-width:1080px) {
-    #cuentas-container {
+    #cuentasContainer {
         display: flex;
         flex-direction: column;
         align-items: center;   
@@ -9,7 +9,7 @@
         font-size: 0.75em;
     }
 
-    #cuentas-container .cuenta-1, .cuenta-2, .cuenta-usd {
+    #cuentasContainer .cuenta-1, .cuenta-2, .cuenta-usd {
         display: block;
         padding: 1em 0 1em 1em;
         width: 90%;
@@ -27,17 +27,17 @@
 
     
 
-    .cuenta-1 h1, .cuenta-2 h1, .cuenta-usd h1  {
+    .cuenta1 h1, .cuenta2 h1, .cuentausd h1  {
         font-size: 2em;
         text-align: center;
     }
 
-    #cuentas-container .movimientos {
+    #cuentasContainer .movimientos {
        margin: 1em 5em 0 0; 
        
     } 
  
-    #cuentas-container select {
+    #cuentasContainer select {
     appearance: none;
      border-radius: 15px;
      border: solid red 3px;
@@ -46,90 +46,17 @@
     }
    
 
-    #cuentas-container button {
+    #cuentasContainer button {
          padding: 0 1px 0 1px;
          border: solid red 2px;
          border-radius: 5px;
          background-color: white;
     }
     
-    #cuentas-container button:hover {
+    #cuentasContainer button:hover {
         padding: 1px 2px 1px 2px;
         background-color: red;
         color:white;
         transition-duration: 0.5s;
-    }
-}
-
-@media all and (min-width:1080px) {
-    #menu img {
-        display: none;
-    }
-    
-    #contenedor-enlaces a {
-        display: block;
-        width: 100%;
-        margin-bottom: 0.25em;
-        margin-top: 0.25em;
-        text-decoration: none;
-        background-color: grey;
-        padding: 0.6em;
-        /*genera espacio a la vuelta, lo hace mas "tocable"*/
-        color: black;
-        font-size: 1.9rem;
-    }
-
-
-    #contenedor-enlaces {
-        display: flex;
-        flex-direction: column;
-        min-width: 330px;
-        max-width: 330px;
-        min-height: 100vh;
-        border-right: solid red;
-        font-family: 'Inconsolata', monospace;
-    }
-
-    #contenedor-enlaces ul {
-        padding-left: 0px;
-    }
-    
-    
-    #contenedor-enlaces li {
-        min-width: 100%;
-        margin-top: 1%;
-        list-style: none;
-        display: flex;
-    }
-
-    #contenedor-enlaces .transf a:hover {
-        font-size: 2.4rem;
-        transition: 0.8s;
-    }
-
-    #contenedor-enlaces .inicio a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-    }
-
-    #contenedor-enlaces .cuentas a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-    }
-
-    #contenedor-enlaces .pagos a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-
-    }
-
-    #contenedor-enlaces .prestamos a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-    }
-
-    #abrir,
-    #cerrar {
-        display: none;
     }
 }

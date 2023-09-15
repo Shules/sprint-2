@@ -21,8 +21,8 @@ function Cuentas() {
       <Header />
       <MenuNav />
       <main>
-        <section id="cuentas-container">
-          <div className="cuenta-1">
+        <section id={styles.cuentasContainer}>
+          <div className={styles.cuenta1}>
             <h1>BN $ 123456/5464/0</h1>
 
             <p>$0</p>
@@ -42,7 +42,7 @@ function Cuentas() {
             </select>
           </div>
 
-          <div className="cuenta-2">
+          <div className={styles.cuenta2}>
             <h1>BN $ 123456/5464/0</h1>
 
             <p>$0</p>
@@ -60,7 +60,7 @@ function Cuentas() {
             </select>
           </div>
 
-          <div className="cuenta-usd">
+          <div className={styles.cuentausd}>
             <h1>BN $ 123456/5464/0</h1>
 
             <p>$USD 0</p>

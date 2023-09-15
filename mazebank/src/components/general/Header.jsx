@@ -5,7 +5,7 @@ import styles from "../../styles/Header.module.css";
 function Header() {
   return (
     <header>
-      <div className="imagen-titulo">
+      <div className={styles.imagenTitulo}>
         <figure>
           <img src="images\logo_banco.png"  alt="Imagen del logo del banco" />
         </figure>
