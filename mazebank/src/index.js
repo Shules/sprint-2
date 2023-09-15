@@ -4,8 +4,12 @@ import './index.css';
 import './styles/Header.css';
 import './styles/Footer.css';
 import './styles/MenuNav.css';
+import './styles/Cuentas.css';
+import './styles/Index.css';
+import './styles/Login.css';
+import './styles/Pagos.css';
+import './styles/Prestamos.css';
 import './styles/Transferencias.css';
-import
 
 import App from './App';
 
