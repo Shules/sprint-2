@@ -22,7 +22,7 @@ function Login() {
       <main>
         <div id="login">
           <div className="bank_logo">
-            <img src="img/logo_banco.png" alt="bank_logo" />
+            <img src="images/logo_banco.png" alt="bank_logo" />
           </div>
           <h1 className="bank_name">MAZE BANK</h1> <br />
           <br />
