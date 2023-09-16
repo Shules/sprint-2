@@ -1,5 +1,5 @@
 .main{
-    height: 75%;
+    height: auto;
     display: flex;
     flex-direction: row;
     width: 100vw;
