@@ -1,50 +1,44 @@
-import Header from "./general/Header";
-import Footer from "./general/Footer";
-import MenuNav from "./general/MenuNav";
 import Layout from "./general/Layout";
 import styles from "../styles/Transferencias.module.css";
+import { useState, useEffect } from "react";
 
 function Transferencias() {
-  function mostrarSaldoActual(saldoActual) {
-    let saldoMostrar = document.getElementById("saldoActual");
-    saldoMostrar.textContent = saldoActual;
+  const [userInput,setUserInput] = useState(0);
+  const [moneda, setMoneda] = useState(null);
+  const [saldoActual,setSaldoActual] = useState(1000);
+  const [monto,setMonto] = useState(0);
+  const [rates, setRates] = useState(0);
+
+  useEffect(()=>{
+    fetch("https://open.er-api.com/v6/latest/USD")
+        .then((res)=>res.json())
+        .then((res)=>setRates(res["rates"]));
+  },[]);
+
+  useEffect(()=>{
+    if(moneda == null)
+    {
+      setMonto(0);
+    }
+    if(moneda === "Pesos")
+    {
+      setMonto(userInput);
+    }else if (moneda === 'Dolares'){
+      setMonto(rates["ARS"]*rates["USD"]*userInput);
+    }else if(moneda === 'Euro')
+    {
+      setMonto(userInput * rates["EUR"] * rates["ARS"]);
+    }
+  },[moneda,userInput])
+
+
+  function realizar()
+  {
+    (monto>0 && monto<saldoActual)? 
+    setSaldoActual(saldoActual-monto):
+    window.alert("Transferencia cancelada, monto invalido");
   }
-
-  function convertirMoneda(monto, moneda) {
-    if (moneda == "Dolares") {
-      return monto * 700;
-    }
-
-    if (moneda == "Euro") {
-      return monto * 500;
-    }
-  }
-
-  function mostrarAviso() {
-    let botonContinuar = document.getElementById("continuar");
-    let confirmacion = window.confirm("¿Seguro que desea continuar?");
-    let saldoActual = parseFloat(
-      document.getElementById("saldoActual").textContent
-    );
-    let monto = parseFloat(document.getElementById("monto").value);
-    let moneda = document.getElementById("Importe").value;
-
-    if (moneda != "Pesos") {
-      monto = convertirMoneda(monto, moneda);
-    }
-
-    if (confirmacion && saldoActual >= monto && monto > 0) {
-      saldoActual -= monto;
-      mostrarSaldoActual(saldoActual);
-      alert("¡Transferencia exitosa! Tu saldo actual es de $" + saldoActual);
-    } else if (saldoActual < monto) {
-      alert("No dispone del dinero solicitado");
-    } else if (monto <= 0) {
-      alert("Monto no valido.");
-    } else {
-      alert("Transferencia cancelada.");
-    }
-  }
+  
 
   return (
     <>
@@ -75,25 +69,52 @@ function Transferencias() {
               <li>Plazo de Acreditación: En el acto</li>
 
               <li>
-                Su saldo actual es de: $<a id={styles.saldoActual}>5000</a>
+                Su saldo actual es de: ${saldoActual}
               </li>
             </ul>
           </div>
           <br />
           <div id={styles.importes}>
-            <label className={""}> Importe en </label>
-            <select name="" id={styles.Importes} className={styles.prueba2}>
-              <option value="-">-</option>
-              <option value="Pesos">Pesos</option>
-              <option value="Dolares">Dolares</option>
-              <option value="Euro">Euros</option>
-            </select>
+            <div id={styles.elegirMoneda}>
+              <label className={""}> Importe en </label>
+              <select name="" id={styles.Importes} onChange={(e)=>{setMoneda(e.target.value)}}>
+                <option value="-">-</option>
+                <option value="Pesos">Pesos</option>
+                <option value="Dolares">Dolares</option>
+                <option value="Euro">Euros</option>
+              </select>
+            </div>
+            <div id={styles.monedas}>
+                <h3>Las monedas actuales son: </h3>
+                <ul>
+                  <li>Euro: {rates["EUR"]}</li>
+                  <li>Dolar: {rates["USD"]}</li>
+                  <li>Peso Argentino: {rates["ARS"]}</li>
+                </ul> 
+            </div>
           </div>
           <br />
           <br />
           <div id={styles.montoIngresar}>
             <label className={""}>Monto a ingresar </label> <br />
-            <input type="number" name="monto" id={styles.monto} className={""} />
+            <input 
+            type="number" 
+            name="monto" 
+            id={styles.monto} 
+            className={""} 
+            onChange={(e)=>setUserInput(e.target.value)}/>
+
+            <h3>Converción del monto:</h3>
+            <table style={{borderCollapse:"separate"}}>
+              <tr>
+                <th>Moneda</th>
+                <th>Monto</th>
+              </tr>
+              <tr>
+                <th>{moneda}</th>
+                <th>{monto}</th>
+              </tr>
+            </table>
           </div>
           <br />
           <br />
@@ -119,7 +140,7 @@ function Transferencias() {
           <br />
           <br />
           <div id={styles.botonContinuar}>
-            <button type="button" id={styles.continuar} onClick={mostrarAviso}>
+            <button type="button" id={styles.continuar} onClick={realizar}>
               Continuar
             </button>
           </div>

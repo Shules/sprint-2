@@ -1,46 +1,25 @@
-import Header from "./general/Header";
-import Footer from "./general/Footer";
-import MenuNav from "./general/MenuNav";
 import Layout from "./general/Layout";
 import styles from "../styles/Prestamos.module.css";
+import { useEffect, useState } from "react";
 
 function Prestamos() {
-  function mostrarAviso() {
-    var confirma = window.confirm(
-      "Esta seguro que desea realizar el prestamo?"
-    );
-    var Personal = document.getElementById("Personal");
-    var Emprendimiento = document.getElementById("Emprendimiento");
-    var Capital = document.getElementById("Capital");
-    var contenido = document.getElementsByClassName("prestamo-menu");
-    var confirmacion = document.getElementById("confirmacion");
+  const [prestamo, setPrestamo] = useState(false);
+  const [tipoPrestamo, setTipoPrestamo] = useState(null);
 
-    if (confirma) {
-      if (Personal.checked) {
-        confirmacion.textContent =
-          "Se ha realizado un prestamo personal con exito!";
-      } else if (Emprendimiento.checked) {
-        confirmacion.textContent =
-          "Se ha realizado un prestamo de emprendimiento con exito!";
-      } else if (Capital.checked) {
-        confirmacion.textContent =
-          "Se ha realizado un prestamo de capital con exito!";
-      } else {
-        confirmacion.textContent = "seleccione una opcion por favor!";
-      }
-    }
+
+  useEffect(()=>{
+    setPrestamo(false)
+  },[tipoPrestamo])
+
+  function mostrarAviso() {
+     
+    setPrestamo(window.confirm("Esta seguro que desea realizar el prestamo?"))
+    
   }
 
   function cancelacion() {
-    var Personal = document.getElementById("Personal");
-    var Emprendimiento = document.getElementById("Emprendimiento");
-    var Capital = document.getElementById("Capital");
-    var confirmacion = document.getElementById("confirmacion");
-
-    Personal.checked = false;
-    Emprendimiento.checked = false;
-    Capital.checked = false;
-    confirmacion.textContent = "";
+    setPrestamo(false)
+    setTipoPrestamo(null)
   }
 
   return (
@@ -63,6 +42,7 @@ function Prestamos() {
                       type="radio"
                       name="prestamo"
                       value="Personal"
+                      onClick={(e)=>setTipoPrestamo(e.target.value)}
                     />
                   </h2>
                   <br />
@@ -73,6 +53,7 @@ function Prestamos() {
                       type="radio"
                       name="prestamo"
                       value="Emprendimiento"
+                      onClick={(e)=>setTipoPrestamo(e.target.value)}
                     />
                   </h2>
                   <br />
@@ -83,6 +64,7 @@ function Prestamos() {
                       type="radio"
                       name="prestamo"
                       value="Capital"
+                      onClick={(e)=>setTipoPrestamo(e.target.value)}
                     />
                   </h2>
                 </label>
@@ -104,6 +86,9 @@ function Prestamos() {
                 </h3>
                 <p id={styles.confirmacion}></p>
               </div>
+              {prestamo ? 
+              <h2>se realizo un prestamo del tipo: {tipoPrestamo}</h2> :
+              <h2>Todavía no se realizo el prestamo</h2>}
             </div>
           </div>
         </section>

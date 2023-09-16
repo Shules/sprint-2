@@ -1,6 +1,3 @@
-import Header from "./general/Header";
-import Footer from "./general/Footer";
-import MenuNav from "./general/MenuNav";
 import Layout from "./general/Layout";
 import styles from "../styles/Pagos.module.css";
 
