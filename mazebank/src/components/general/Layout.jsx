@@ -2,19 +2,20 @@ import Header from "./Header";
 import MenuNav from "./MenuNav";
 import Footer from "./Footer";
 import styles from "../../styles/Layout.module.css"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Layout({children}) {
+    
     const [mostrarMenu,setMostrarMenu] = useState(false);
 
     return (
         <div>
             <Header />  
             <div className={styles.main}>
-                <div style={{display:"inline-block"}}>
+                <div>
                     {mostrarMenu? 
-                    <img src="/images/cerrar_menu.png" onClick={()=>setMostrarMenu(false)}/> :
-                    <img src="/images/burger_menu.png" onClick={()=>setMostrarMenu(true)}/>
+                    <img src="/images/cerrar_menu.png" alt="Imagen Cerrar Menu" onClick={()=>setMostrarMenu(false)}/> :
+                    <img src="/images/burger_menu.png" alt="Imagen Menu" onClick={()=>setMostrarMenu(true)}/>
                     }
                     {mostrarMenu && <MenuNav />}
                     

@@ -4,6 +4,7 @@
 @media all and (min-width: 390px){
     
     header {
+        height: 10%;
         width: 100vw;
         display: flex;
         align-items: center;
@@ -47,6 +48,7 @@
     /*COMIENZO HEADER*/
 
     header {
+        height: 10%;
         width: 100vw;
         display: flex;
         align-items: center;

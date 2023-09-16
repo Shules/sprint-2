@@ -7,7 +7,9 @@ function Cuentas() {
   };
 
   var verAlias2 = () => {
-    alert("Su Alias es: madera.sifon.tormenta\nSu CBU/CVU es: 000026198168457081");
+    alert(
+      "Su Alias es: madera.sifon.tormenta\nSu CBU/CVU es: 000026198168457081"
+    );
   };
 
   var verAliasUSD = () => {
@@ -16,65 +18,63 @@ function Cuentas() {
 
   return (
     <Layout>
-      <main>
-        <section id={styles.cuentasContainer}>
-          <div className={styles.cuenta1}>
-            <h1>BN $ 123456/5464/0</h1>
+      <section id={styles.cuentasContainer}>
+        <div className={styles.cuenta1}>
+          <h1>BN $ 123456/5464/0</h1>
 
-            <p>$0</p>
-            <p>Limite de extracción $100.000</p>
+          <p>$0</p>
+          <p>Limite de extracción $100.000</p>
 
-            <button onClick={verAlias1}>Ver Alias/CBU/CVU</button>
+          <button onClick={verAlias1}>Ver Alias/CBU/CVU</button>
 
-            <br />
-            <button className="movimientos" /*onClick*/>Ver movimientos</button>
-            <select name="" id="">
-              <option id="op1" value="">
-                Del día
-              </option>
-              <option value="">Últimos 3 dias</option>
-              <option value="">Últimos 7 dias</option>
-              <option value="">Último mes</option>
-            </select>
-          </div>
+          <br />
+          <button className={styles.movimientos} /*onClick*/>Ver movimientos</button>
+          <select name="" id="">
+            <option id="op1" value="">
+              Del día
+            </option>
+            <option value="">Últimos 3 dias</option>
+            <option value="">Últimos 7 dias</option>
+            <option value="">Último mes</option>
+          </select>
+        </div>
 
-          <div className={styles.cuenta2}>
-            <h1>BN $ 123456/5464/0</h1>
+        <div className={styles.cuenta2}>
+          <h1>BN $ 123456/5464/0</h1>
 
-            <p>$0</p>
-            <p>Limite de extracción $100.000</p>
+          <p>$0</p>
+          <p>Limite de extracción $100.000</p>
 
-            <button onClick={verAlias2}>Ver Alias/CBU/CVU</button>
+          <button onClick={verAlias2}>Ver Alias/CBU/CVU</button>
 
-            <br />
-            <button className="movimientos" /*onClick*/>Ver movimientos</button>
-            <select name="" id="">
-              <option value="">Del día</option>
-              <option value="">Últimos 3 dias</option>
-              <option value="">Últimos 7 dias</option>
-              <option value="">Último mes</option>
-            </select>
-          </div>
+          <br />
+          <button className={styles.movimientos} /*onClick*/>Ver movimientos</button>
+          <select name="" id="">
+            <option value="">Del día</option>
+            <option value="">Últimos 3 dias</option>
+            <option value="">Últimos 7 dias</option>
+            <option value="">Último mes</option>
+          </select>
+        </div>
 
-          <div className={styles.cuentausd}>
-            <h1>BN $ 123456/5464/0</h1>
+        <div className={styles.cuentausd}>
+          <h1>BN $ 123456/5464/0</h1>
 
-            <p>$USD 0</p>
-            <p>Limite de extracción USD$200</p>
+          <p>$USD 0</p>
+          <p>Limite de extracción USD$200</p>
 
-            <button onClick={verAliasUSD}>Ver Alias/CBU/CVU</button>
+          <button onClick={verAliasUSD}>Ver Alias/CBU/CVU</button>
 
-            <br />
-            <button className="movimientos" /*onClick*/>Ver movimientos</button>
-            <select name="" id="">
-              <option value="">Del día</option>
-              <option value="">Últimos 3 dias</option>
-              <option value="">Últimos 7 dias</option>
-              <option value="">Último mes</option>
-            </select>
-          </div>
-        </section>
-      </main>
+          <br />
+          <button className={styles.movimientos} /*onClick*/>Ver movimientos</button>
+          <select name="" id="">
+            <option value="">Del día</option>
+            <option value="">Últimos 3 dias</option>
+            <option value="">Últimos 7 dias</option>
+            <option value="">Último mes</option>
+          </select>
+        </div>
+      </section>
     </Layout>
   );
 }

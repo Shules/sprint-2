@@ -5,7 +5,6 @@ function Pagos() {
   return (
     <>
       <Layout>
-      <main>
         <section id={styles.cont}>
           <div id={styles.montoActual}>
             <p>Monto actual $AR: 9999,99</p>
@@ -22,7 +21,6 @@ function Pagos() {
           </div>
           <section className={styles.info}></section>
         </section>
-      </main>
       </Layout>
     </>
   );

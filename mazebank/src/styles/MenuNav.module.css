@@ -1,6 +1,6 @@
 @media all and (min-width:80px) {
     #menu img {
-        width: 10vw;
+        width: 5vw;
     }
 
     #menu #cerrar {
@@ -16,7 +16,7 @@
         /*oculta lo que sobre salga*/
     }
 
-    #contenedorEnlaces a {
+    #contenedorEnlaces ul li a {
         display: block;
         width: 100%;
         margin-bottom: 0.25em;
@@ -52,10 +52,6 @@
     {
         display: inline-block;
     }
-    
-    aside {
-        display: flex;
-    }
 
     #contenedorEnlaces a {
         display: inline-block;
@@ -67,7 +63,7 @@
         padding: 0.6em;
         /*genera espacio a la vuelta, lo hace mas "tocable"*/
         color: black;
-        font-size: 1.9rem;
+        font-size: 1rem;
     }
 
 
@@ -77,7 +73,6 @@
         min-width: 330px;
         max-width: 330px;
         min-height: 100vh;
-        
         font-family: 'Inconsolata', monospace;
     }
 
@@ -98,8 +93,8 @@
         transition: 0.8s;
     }
 
-    #contenedorEnlaces .transf a:hover {
-        font-size: 2.4rem;
+    #contenedorEnlaces ul li a:hover {
+        font-size: 1.5rem;
         transition: 0.8s;
     }
 
