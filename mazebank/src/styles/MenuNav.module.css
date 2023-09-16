@@ -1,4 +1,7 @@
 @media all and (min-width:80px) {
+    img {
+        display: block;
+    }
     #menu img {
         width: 5vw;
     }
@@ -8,12 +11,17 @@
     }
 
     #menu #contenedorEnlaces {
-        height: 0;
-        /*altura cambia a cero*/
-        transition: height 1s ease;
-        /*Efecto de transisición*/
-        overflow: scroll;
-        /*oculta lo que sobre salga*/
+        
+        overflow: hidden;
+        
+    }
+    #contenedorEnlaces {
+        display: flex;
+        flex-direction: column;
+        min-width: 330px;
+        max-width: 330px;
+        min-height: 100vh;
+
     }
 
     #contenedorEnlaces ul li a {
@@ -40,19 +48,15 @@
     }
 
     #menu:target #contenedorEnlaces {
-        height: 40vh;
-        transition: height 1.5s ease;
+        height: auto;
+       
     }
 
     /*FIN MENU */
 }
 
 @media all and (min-width:1080px) {
-    #menu
-    {
-        display: inline-block;
-    }
-
+    
     #contenedorEnlaces a {
         display: inline-block;
         width: 100%;
